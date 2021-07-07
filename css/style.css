@@ -5,6 +5,21 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Ruhl';
+    src: url('../fonts/FrankRuhlLibre-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Ruhl Medium';
+    src: url('../fonts/FrankRuhlLibre-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Vibes';
+    src: url('../fonts/GreatVibes-Regular.ttf');
+}
+
 html {
     font-size: 62.5%;
     --header1: calc(2rem + 1vw);
@@ -57,4 +72,4 @@ ul {
 
 a {
     text-decoration: none;
-}font-family: 'Great Vibes', cursive;
+}
