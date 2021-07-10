@@ -206,9 +206,18 @@ nav {
 }
 
 @media screen and (max-width:842px) {
+    .hero {
+        width: 100%;
+    }
+
+    /*burger things*/
     .burger {
         position: relative;
         display: block;
+    }
+
+    .hero-introduction p {
+        padding: 5rem 3rem;
     }
 
     .burger span {
