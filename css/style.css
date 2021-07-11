@@ -127,6 +127,7 @@ nav {
 
 .hero-introduction p {
     padding: 5rem 10rem;
+    color: var(--gray-text);
 }
 
 .hero-introduction h2 {
@@ -144,6 +145,7 @@ nav {
     background: linear-gradient(#dad8dd, #dad1d4);
     position: relative;
     z-index: 1;
+    pointer-events: none;
 }
 
 .hero-elena {
@@ -203,6 +205,54 @@ nav {
 .burger,
 .menu-check {
     display: none;
+}
+
+/*About Section*/
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    color: white;
+    background: var(--background-color);
+    flex: 2 1 40rem;
+    justify-content: space-around;
+}
+
+.about-text div {
+    padding: 3rem 8rem;
+}
+
+.about-text h3 {
+    padding: 2rem 0rem;
+    font-family: "Ruhl Medium";
+}
+
+.about-text h2 {
+    font-family: "Vibes";
+    padding: 4rem;
+}
+
+.about-image {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about-image h5 {
+    position: absolute;
+    letter-spacing: 2rem;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
 }
 
 @media screen and (max-width:842px) {
@@ -277,5 +327,10 @@ nav {
 
     .menu-check:checked~.burger span:nth-child(3) {
         transform: rotateZ(-45deg) translateY(-300%);
+    }
+
+    /*about section*/
+    .about-text div {
+        padding: 3rem 3rem;
     }
 }
