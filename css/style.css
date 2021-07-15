@@ -31,6 +31,7 @@ html {
     --special-color: #906272;
     --background-color: #414141;
     --gray-text: #525252;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -205,6 +206,7 @@ nav {
 .burger,
 .menu-check {
     display: none;
+    cursor: pointer;
 }
 
 /*About Section*/
@@ -398,37 +400,22 @@ footer h4 {
         transition: transform 0.8s ease;
     }
 
-    .menu-check {
-        position: absolute;
-        top: 50%;
-        right: 5%;
-        transform: translate(5%, -50%);
-        width: 5rem;
-        height: 5rem;
-        cursor: pointer;
-        opacity: 0;
-        z-index: 100;
-        display: block;
-    }
-
-    .menu-check:checked+.nav-links {
+    .nav-open {
         transform: translateX(-100%);
     }
 
-    .menu-check:checked~.burger span {
+    .toggle .line1 {
+        transform: rotateZ(45deg) translateY(300%);
         background: white;
     }
 
-    .menu-check:checked~.burger span:nth-child(1) {
-        transform: rotateZ(45deg) translateY(300%);
-    }
-
-    .menu-check:checked~.burger span:nth-child(2) {
+    .toggle .line2 {
         opacity: 0;
     }
 
-    .menu-check:checked~.burger span:nth-child(3) {
+    .toggle .line3 {
         transform: rotateZ(-45deg) translateY(-300%);
+        background: white;
     }
 
     /*about section*/
